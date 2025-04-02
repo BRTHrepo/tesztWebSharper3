@@ -31,7 +31,8 @@ jobs:
       - run: dotnet build
       - run: npx vite build --outDir ../../dist --base ./
         working-directory: bin/html
-
+      
+      
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:

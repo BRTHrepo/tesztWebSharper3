@@ -24,7 +24,7 @@ jobs:
           dotnet nuget add source https://nuget.pkg.github.com/dotnet-websharper/index.json \
             --name github \
             --username BRTHrepo \
-            --password "${{ secrets.WEBSHARPER_FEED }}" \
+            --password "${{ secrets.FEED }}" \
             --store-password-in-clear-text
 
       - run: npm install -g vite

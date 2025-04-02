@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <StartAction>Program</StartAction>
     <StartProgram>dotnet</StartProgram>
-    <StartArguments>serve</StartArguments>
+    <StartArguments>$(MSBuildThisFileDirectory)bin\html</StartArguments>
     <StartWorkingDirectory>$(MSBuildThisFileDirectory)bin\html</StartWorkingDirectory>
   </PropertyGroup>
   

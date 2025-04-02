@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* Sticky footer styles */
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+            /* Margin bottom by footer height */
+            margin-bottom: 60px;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            /* Set the fixed height of the footer here */
+            height: 60px;
+            background-color: #f5f5f5;
+        }
+
+        .container .text-muted {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Json Toolbox test</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav"><li class="active"><a href="index.html">Home</a></li><li><a href="about.html">About</a></li></ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://websharper.com">websharper.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Say Hi to JavaScript!</h1><div><div id="ws32160121"></div></div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">
+                For an enhanced template that provides automatic GitHub deployment to Azure, fork from <a href="https://github.com/intellifactory/ClientServer.Azure">GitHub</a>, or
+                read more <a href="https://websharper.com/blog-entry/4368/deploying-websharper-apps-to-azure-via-github">here</a>.
+            </p>
+        </div>
+    </footer>
+    <meta id='websharper-data' name='websharper-data' content='{"$TYPES":[["WebSharper","Web","FSharpInlineControl"]],"$DATA":{"$V":{"ws32160121":{"$T":0,"$V":{"args":[],"funcName":["JsonToolboxWebApp","Client","Main"]}}}}}' />
+<script src="Scripts/WebSharper.Core.JavaScript/Runtime.js" type="text/javascript" charset="UTF-8"></script><!--[if lte IE 7.0]>
+<script src="Scripts/WebSharper.Main/Json.js" type="text/javascript" charset="UTF-8"></script><![endif]-->
+<!--[if lte IE 11.0]>
+<script src="Scripts/WebSharper.UI/closest.js" type="text/javascript" charset="UTF-8"></script><![endif]-->
+<!--[if lte IE 9.0]>
+<script src="Scripts/WebSharper.Main/AnimFrame.js" type="text/javascript" charset="UTF-8"></script><![endif]-->
+<script src="Scripts/WebSharper.Main/WebSharper.Main.js" type="text/javascript" charset="UTF-8"></script><script src="Scripts/WebSharper.Collections/WebSharper.Collections.js" type="text/javascript" charset="UTF-8"></script><script src="Scripts/WebSharper.MathJS.Extensions/WebSharper.MathJS.Extensions.js" type="text/javascript" charset="UTF-8"></script><script src="Scripts/WebSharper.Web/WebSharper.Web.js" type="text/javascript" charset="UTF-8"></script><script src="Scripts/WebSharper.UI/WebSharper.UI.js" type="text/javascript" charset="UTF-8"></script><script src="Scripts/WebSharper.UI.Templating.Runtime/WebSharper.UI.Templating.Runtime.js" type="text/javascript" charset="UTF-8"></script><script src="Scripts/JsonToolboxWebApp/JsonToolboxWebApp.js" type="text/javascript" charset="UTF-8"></script><script type="text/javascript">
+if (typeof WebSharper !=='undefined') {
+  WebSharper.Runtime.ScriptBasePath = 'Scripts/';
+  WebSharper.Runtime.Start();
+}
+</script>
+
+<div style="display:none" ws-children-template="MainForm"><div>
+                <input ws-var="TextToReverse" />
+                <button ws-onclick="OnSend">Send</button>
+                <hr />
+                <h4 class="text-muted">The server responded:</h4>
+                <div class="jumbotron"><h1>${Reversed}</h1></div>
+            </div></div></body>
+</html>

@@ -35,7 +35,7 @@ jobs:
       - name: Copy additional HTML files to dist/
         run: |
           if [ -d "bin/html" ]; then
-            cp bin/html/* dist/
+             cp -r bin/html/* dist/
           else
             echo "HTML files not found!"
             exit 1

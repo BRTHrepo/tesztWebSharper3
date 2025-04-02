@@ -31,7 +31,15 @@ jobs:
       - run: dotnet build
       - run: npx vite build --outDir ../../dist --base ./
         working-directory: bin/html
-      
+      # HTML fájlok másolása, ha léteznek
+      - name: Copy additional HTML files to dist/
+        run: |
+          if [ -d "bin/html" ]; then
+            cp bin/html/*.html dist/
+          else
+            echo "HTML files not found!"
+            exit 1
+          fi
       
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
